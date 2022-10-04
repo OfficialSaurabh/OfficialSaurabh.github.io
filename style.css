@@ -150,30 +150,24 @@ li {
   /* padding: 0 0 0 8px; */
   height: 50px;
 }
-.stack-list{
+.stack-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: start;
   margin: 0 0 10px;
 }
 @media screen and (max-width: 335px) {
-  .stack-list {
-  justify-content: start;
-  margin-top: 5px;
-
-  }
-  .techstack{
-    margin-top: 7px
+  .techstack {
+    margin-top: 7px;
   }
 }
-  
 
 .techstack {
   font-size: 14px;
   border-radius: 10px;
-  border:1px solid;
-  padding:0 5px;
+  border: 1px solid;
+  padding: 0 5px;
   margin-left: 7px;
   color: #899096;
 }
@@ -215,7 +209,6 @@ hr {
   border: #6c757d 1px solid;
   color: #6c757d;
   font-weight: bolder;
-
 }
 .card-foot .sourcecode-btn:hover {
   background-color: #6c757d;
