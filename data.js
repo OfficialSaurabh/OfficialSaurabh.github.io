@@ -24,7 +24,7 @@ const data = [
         description: "Fake Shop is 2-page web app one to display a list of products and second to show details of a given product",
         sourceCode: "https://github.com/OfficialSaurabh/fakeshop",
         livePreview: "https://see-product.netlify.app/",
-        techStack:["React JS", "Tailwind CSS", " Fake Store API"]
+        techStack:["React JS", "Tailwind CSS", "Fake Store API", ]
     },
     {
         "id": 3,

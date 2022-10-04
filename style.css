@@ -157,6 +157,18 @@ li {
   justify-content: space-evenly;
   margin: 0 0 10px;
 }
+@media screen and (max-width: 335px) {
+  .stack-list {
+  justify-content: start;
+  margin-top: 5px;
+
+  }
+  .techstack{
+    margin-top: 7px
+  }
+}
+  
+
 .techstack {
   font-size: 14px;
   border-radius: 10px;
