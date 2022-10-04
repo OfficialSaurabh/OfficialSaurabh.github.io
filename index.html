@@ -4,66 +4,121 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <title>Saurabh Kumar</title>
   </head>
   <body>
-     <nav >
+    <nav>
       <div class="navlink">
-        <div class="logo ">
-          <img src="./img/logo.png" alt=" logo" id="logo">
+        <div class="logo">
+          <img src="./img/logo.png" alt=" logo" id="logo" />
           <!-- <a href="index.html">Saurabh Kumar</a> -->
         </div>
-        <div >
+        <div>
           <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="./Saurabh's Resume.pdf" target="_blank">Resume</a></li>
           </ul>
         </div>
       </div>
-     </nav>
-     <main class="container">
-    <div class=" profile">
-      <img id="avtar" src="./img/saurabh.png" alt="saurbh pic" />
-      <p class="name"> Hii I'm Saurabh</p>
-    </div>
-  
-    <h1>About me</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maxime
-      fugiat consectetur, quis quam laboriosam iure dolore pariatur tempora
-      suscipit non, at aliquam sit placeat vitae amet optio? Aspernatur, eius?
-    </p>
+    </nav>
+    <main class="container">
+      <div class="profile">
+        <img id="avtar" src="./img/saurabh.png" alt="saurbh pic" />
+        <p class="name">I'm Saurabh Kumar</p>
+      </div>
 
-    <h1>Education</h1>
-    <ol>
-      <li>
-        Computer Sceince and Engineering Bengal College of Engineering and
-        Technology, Durgapur
-      </li>
-      <li>10+2 from CBSE Board Holy Mission Sr. Sec. School, Muzaffarpur</li>
-    </ol>
+      <h1 class="sectionTitle">About me</h1>
+      <p>
+        A passionate programmer and a web developer, based in Bihar, India.
+        I am a Frontend Developer with React.js, Next.js, TailwindCSS, as my tech stack.
 
-    <h1>Skills</h1>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>RactJs</li>
-      <li>JavaScript</li>
-    </ul>
+      </p>
+      <div>
+        <h1 class="sectionTitle">Propject</h1>
+        <div class="card-container" id="cards">
+          <!-- Cresate Cards dynamically using data.js -->
+        </div>
+      </div>
 
-    <h1>Hobbies</h1>
-    <ul>
-      <li>Listening Songs</li>
-      <li>Watching webseries</li>
-    </ul>
-    <a href="">
-     insta
-      df
-    </a>
-   </main>
+      <h1 class="sectionTitle">Skills</h1>
+      <div class="Skills">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill-name">
+          <i class="fab fa-html5"></i>
+          <p>HTML</p>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill-name">
+          <i class="fab fa-css3"></i>
+          <p>CSS</p>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill-name">
+          <i class="fa-brands fa-square-js"></i>
+          <p>JavaScript</p>
+        </a>
+        <a href="https://beta.reactjs.org/learn" target="_blank" class="skill-name">
+          <i class="fa-brands fa-react"></i>
+          <p>ReactJs</p>
+        </a>
+        <a href="https://nextjs.org/docs/getting-started" target="_blank" class="skill-name">
+          <img src="./img/nextjs-icon .svg" alt="" class="next" />
+          <p>NextJs</p>
+        </a>
+        <a href="https://tailwindcss.com/docs/installation" target="_blank" class="skill-name">
+          <i class="fab fa-tailwindcss"></i>
+          <img src="./img/tailwind-css.svg" target="_blank" alt="tailwind-css logo" class="tailwind" />
+          <p>Tailwind</p>
+        </a>
+        <a href="https://www.freecodecamp.org/news/git-cheat-sheet/" target="_blank" class="skill-name">
+          <i class="fa-brands fa-git-alt"></i>
+          <p>GIT</p>
+        </a>
+        <a href="https://firebase.google.com/docs?gclid=CjwKCAjws--ZBhAXEiwAv-RNL_G4JMvxz10EMY69pfRWhezhT6FrFQth2mjRnDVEuEwKnPYTZ5diBhoCDuwQAvD_BwE&gclsrc=aw.ds" target="_blank" class="skill-name">
+          <img src="./img/firbase.svg" alt=" firbase logo " class="firebase" />
+          <p>Firebase</p>
+        </a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="foot-container">
+
+        <div class="foot-logo">
+          <img src="./img/logo.png" alt=" logo" id="logo" />
+        <a href="index.html">Saurabh Kumar</a>
+        </div>
+        <div>
+          <ul class="social-icons">
+            <li>
+              <a href="https://github.com/OfficialSaurabh" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/saurabh.kumar.581" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/saurabh_kumar_581/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/saurabh-kumar-581/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="./data.js"></script>
   <script src="./index.js"></script>
 </html>

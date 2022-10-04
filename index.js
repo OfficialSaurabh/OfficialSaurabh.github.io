@@ -1,31 +1,31 @@
-// const num = 100,
-//   arr = [];
+const container = document.getElementById("cards");
 
-// // /* code from here */
-// for (let i = 1; i <= num; i++) {
-//   if (i % 3 == 0 && i % 4 == 0) {
-//     arr.push("devsnest");
-//   } else if (i % 3 == 0) {
-//     arr.push("dev");
-//   } else if (i % 4 == 0) {
-//     arr.push("nest");
-//   }
-// }
-// console.log(arr);
-// count number d presenr in a string
-// var randomString="devsnest";
-// var countOfD = 0
-// /* start code here: */
-// for(let i =0; i<randomString.length; i++){
-//   if(randomString[i]=="d"){
-//     countOfD++;
-//   }
-// }
-// console.log(countOfD);
+data.forEach((result, idx) => {
+  // Create card element
+  const card = document.createElement("div");
+  card.classList = "card-body";
 
-let n=121;
-let palin=0;
-for(let i=n.length; i>=0; i--){
-    palin.push(n[i]);
-}
-console.log(palin);
+  // Construct card content
+  const content = `
+    <div class="card">
+            <img src="${result.image}" alt="project pic" />
+            <div class="card-content card-body">
+              <h3 class="title">${result.title}</h3>
+              <p>
+                ${result.description}
+              </p>
+              <h3 class="stack">Tech Stack</h3>
+                <span class="techstack"> ${result.techStack} </span> 
+              <hr>
+              <div class="card-foot">
+                <a href="${result.sourceCode}" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a >
+                  
+                  <a href="${result.livePreview}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview</a>
+                </div>
+              </div>
+          </div>
+    `;
+
+  // Append newyly created card element to the container
+  container.innerHTML += content;
+});
