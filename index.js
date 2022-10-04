@@ -18,7 +18,7 @@ data.forEach((result, idx) => {
                 <span class="techstack"> ${result.techStack} </span> 
               <hr>
               <div class="card-foot">
-                <a href="${result.sourceCode}" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a >
+                <a href="${result.sourceCode}" class="sourcecode-btn" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a >
                   
                   <a href="${result.livePreview}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview</a>
                 </div>
