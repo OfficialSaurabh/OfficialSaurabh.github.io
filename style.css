@@ -7,16 +7,18 @@ body {
   background-color: var(--primary-color);
   color: #d8d8d8;
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   line-height: 1.5;
   /* overflow: hidden; */
 }
-p{
+p {
   font-size: 20px;
 }
 .title {
   color: #ecebeb;
+  font-size: 20px;
 }
 nav {
   padding: 8px 0;
@@ -143,19 +145,29 @@ li {
 }
 
 .card-content p {
-  font-size: 14px;
+  font-size: 15px;
   margin: 0 0 10px;
-  padding: 0 0 0 8px;
+  /* padding: 0 0 0 8px; */
   height: 50px;
+}
+.stack-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 0 10px;
 }
 .techstack {
   font-size: 14px;
-  padding: 0px 8px;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  border:1px solid;
+  padding:0 5px;
+  margin-left: 7px;
+  color: #899096;
 }
 .stack {
-  margin: 20px 0 8px 0;
+  /* margin: 20px 0 8px 0; */
+  margin-top: 20px;
 }
 hr {
   display: block;
@@ -165,6 +177,9 @@ hr {
   margin: 1em 0;
   padding: 0;
   width: 100%;
+}
+.card:nth-last-child(1) {
+  display: none;
 }
 
 .card-foot {
@@ -177,19 +192,21 @@ hr {
 .card-foot a {
   text-decoration: none;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: bolder;
   padding: 10px;
   color: var(--tertiary-color);
   margin-right: 10px;
   border-radius: 10px;
   border: var(--tertiary-color) 1px solid;
 }
-.card-foot .sourcecode-btn{
-  border:#6c757d 1px solid;
+.card-foot .sourcecode-btn {
+  border: #6c757d 1px solid;
   color: #6c757d;
+  font-weight: bolder;
+
 }
 .card-foot .sourcecode-btn:hover {
-  background-color:#6c757d;
+  background-color: #6c757d;
   color: #ffff;
 }
 .card-foot a:hover {
@@ -247,15 +264,14 @@ hr {
     flex: 1 1 64px;
   }
 }
-@media  screen and (max-width:400px) {
-  .foot-logo a{
+@media screen and (max-width: 400px) {
+  .foot-logo a {
     display: none;
   }
   #avtar {
     width: 200px;
     height: 200px;
   }
-  
 }
 
 footer {
