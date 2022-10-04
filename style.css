@@ -10,6 +10,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   line-height: 1.5;
+  /* overflow: hidden; */
 }
 p{
   font-size: 20px;
@@ -235,8 +236,18 @@ hr {
 @media screen and (max-width: 500px) {
   .skill-name {
     width: 20%;
-    flex: 1 1 86px;
+    flex: 1 1 64px;
   }
+}
+@media  screen and (max-width:400px) {
+  .foot-logo a{
+    display: none;
+  }
+  #avtar {
+    width: 200px;
+    height: 200px;
+  }
+  
 }
 
 footer {
