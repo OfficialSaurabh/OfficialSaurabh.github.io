@@ -1,7 +1,8 @@
 :root {
   --primary-color: #0d1117;
   --secondary-color: #161b22;
-  --tertiary-color: #1f6feb;
+/*   --tertiary-color: #1f6feb; */
+ --tertiary-color: #00AEF0;
 }
 body {
   background-color: var(--primary-color);
